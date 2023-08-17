@@ -21,6 +21,7 @@ class NumbersApi
 
   def config_swagger()
     Swagger.configure do |config|
+      config.scheme = "https"
       config.host = "https://api.transmitsms.com/".gsub("http://", "").gsub("https://", "").gsub("/", "")
       config.base_path = "/"
       config.format = "x-www-form-urlencoded"
